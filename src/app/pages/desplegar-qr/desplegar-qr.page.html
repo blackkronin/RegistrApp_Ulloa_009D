@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button (click)="desplegarMenu()">
+        <ion-icon slot="start" name="menu" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Desplegar QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br><br><br>
+  <ion-card>
+    <ion-card-content>
+      <img src="/assets/codigoqrlogo.png" alt="">
+    </ion-card-content>
+  </ion-card>
+  <br>
+  <ion-button expand="full" routerLink="/desplegar-qr" (click)="MensajeListo('top')">
+    Scanear
+  </ion-button>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-icon slot="primary" name="logo-instagram"></ion-icon>
+    <ion-icon slot="secondary" name="globe"></ion-icon>
+    <ion-title>DUOC UC</ion-title>
+  </ion-toolbar>
+</ion-footer>
